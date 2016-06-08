@@ -34,7 +34,9 @@
             
  
             <f:facet name="footer">
-                <p:commandButton value="Creer Client" update="growl" actionListener="#{ClientManagedBean.creerClient}"/>
+                <p:commandButton value="Creer Client" actionListener="#{ClientMB.creerClient}" >
+                		<f:param id="creerClient"/>
+                </p:commandButton>
             </f:facet>  
         </h:panelGrid>
 	</h:form>
