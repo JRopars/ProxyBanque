@@ -20,5 +20,10 @@
             <supported-locale>us</supported-locale>
         </locale-config>
 	</application>
+	<managed-bean>
+		<managed-bean-name>clientMB</managed-bean-name>
+		<managed-bean-class>fr.proxybanque.managedBean.ClientManagedBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 
 </faces-config>
