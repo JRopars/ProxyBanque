@@ -26,7 +26,6 @@ public class Client {
 	 * Constructeurs
 	 */
 	public Client() {
-		super();
 	}
 
 	public Client(String nom, String prenom, String adresse, String codeP, String ville, String telephone) {
