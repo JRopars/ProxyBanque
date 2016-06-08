@@ -27,11 +27,11 @@
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="fr.adaming.model" />
+		<property name="packagesToScan" value="fr.proxybanque" />
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">${db.hibernate.dialect}</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
 				<prop key="hibernate.cglib.use_reflection_optimizer">false</prop>
 				<prop key="hibernate.query.substitutions">true 1, false 0, yes 'Y', no 'N'</prop>
 				<prop key="hibernate.connection.isolation">2</prop>
